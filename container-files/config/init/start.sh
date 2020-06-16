@@ -89,6 +89,7 @@ if [[ $(mysql -u "${DB_USER}" -h "${DB_ADDRESS}" -e "show databases" | grep cact
     import_db
     spine_db_update
 fi
+update-ca-certificates
 # Update Cacti config
 update_cacti_db_config
 # Update Spine config
